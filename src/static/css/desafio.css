@@ -1,3 +1,68 @@
+/*Slide*/
+
+.container-fluid {
+    padding: 0;
+}
+
+#mainSlider .carousel-inner{
+    height: 85vh; /*altura do slide para caber dentro da tela inicial*/
+}
+
+#mainSlider .carousel-caption{
+    top: 15%;
+    width: 25%;
+}
+
+#mainSlider .carousel-caption h4{
+    font-size: 50px;
+    margin-bottom: 30px;    
+    color: rgb(23, 23, 93);
+}
+
+#mainSlider .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(46, 91, 174);
+    color: white;
+}
+
+#mainSlider .carousel-caption h3{
+    font-size: 30px;
+    font-weight: 10%;
+    margin-bottom: 10px;
+    color: rgb(217, 223, 236);
+}
+
+.main-btn{
+    background-color: #e5a826;
+    font-size: large;
+    color: white;
+    text-transform: uppercase;
+    width: 220px;
+    height: 50px;
+    padding: 10px 20px;
+    transition: .55s;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: white;
+    border-color:coral;
+    width: 222px;
+    height: 52px;
+}
+
+.carousel-indicators .active{
+    background-color: #e5a826;
+}
+
+/* card graduação*/
+
+
 
 /*breakpoints*/
 .card-title{
@@ -22,8 +87,8 @@
     }
 
     .img-pos{
-        width:5px;
-        height: 5px;;
+        width: 50px;
+        height: 50px;
 
     }
     
@@ -37,8 +102,6 @@
     }
 
     .img-pos{
-        width:50px;
-        height: 50px;;
 
     }
     
@@ -51,8 +114,7 @@
     }
 
     .img-pos{
-        width:100px;
-        height: 100px;;
+        
 
     }
     
