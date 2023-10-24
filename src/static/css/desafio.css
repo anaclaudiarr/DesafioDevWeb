@@ -1,0 +1,60 @@
+
+/*breakpoints*/
+.card-title{
+    color: black;
+    font-size: 14px;
+}
+
+.img-pos{
+    width:50px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* 480px - 768px = tablet */
+@media (min-width:480px) {
+    .card-title{
+        color: violet;
+        font-size: 14px;
+        
+    }
+
+    .img-pos{
+        width:5px;
+        height: 5px;;
+
+    }
+    
+}
+
+/* 768px - 1024px = telas menores, laptop */
+@media (min-width:768px) {
+    .card-title{
+        color: gray;
+        font-size: 12px;
+    }
+
+    .img-pos{
+        width:50px;
+        height: 50px;;
+
+    }
+    
+}
+
+/* 1200px + px = Tvs */
+@media (min-width:1200px) {
+    .card-title{
+        color: green;
+    }
+
+    .img-pos{
+        width:100px;
+        height: 100px;;
+
+    }
+    
+}
+

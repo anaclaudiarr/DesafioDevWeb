@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header class="espaço">
+    <p>
+    <h4 class="mb-0 mt-5 mx-5">Utilize os canais de atendimento para obter mais informações</h4>
+    </p>
+    <hr>
+    <section class="m-5 d-flex justify-content-around">
+        <div class="border p-3 shadow p-3 mb-5 bg-white rounded">
+            <h2>Atendimento via Telefone</h2>
+            <p><b>0800 - xxx - xxxx</b></p>
+            <p>HORÁRIO DE ATENDIMENTO</p>
+            <p>De segunda à sexta-feira das 7h30 às 20h00</p>
+        </div>
+        <div class="border p-3 shadow p-3 mb-5 bg-white rounded">
+            <h2>Atendimento via WhatsApp</h2>
+            <p>Fale com a Unes pelo WhatsApp:</p>
+            <p>55 12 9xxxx-xxxx</p>
+            <button type="button" class="btn btn-success align-bottom-center">WhatsApp</button>
+        </div>
+    </section>
+    <form class="m-5">
+        <h4>Preencha o formulário abaixo para esclarermos suas dúvidas!</h4>
+        <hr>
+        Nome:<br>
+        <input type="nome" name="nome" style="width: 50%"> <br>
+        Email:<br>
+        <input type="email" name="e-mail" style="width: 50%"> <br>
+        Telefone:<br>
+        <input type="telefone" name="telefone" style="width: 50%"> <br>
+        Mensagem:<br>
+        <input type="text" name="descrição" style="width: 50%; height:100px"><br>
+        <button type="button" class="btn btn-info my-2">Enviar</button>
+    </form>
+
+</header>
+
+{% endblock %}

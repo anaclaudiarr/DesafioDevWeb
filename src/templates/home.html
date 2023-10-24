@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="/static/imagem/unes.png" alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img class="d-block w-100" src="/static/imagem/vestibular.png" alt="Segundo Slide"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="#"><img class="d-block w-100" src="/static/imagem/pós.png" alt="Terceiro Slide"></a>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <section class="m-5">
+        <h3>Graduação</h3>
+        <p>Confira os nossos cursos de graduação</p>
+        <div class="card-deck">
+            <div class="card bg-secondary mb-3" style="max-width: 10rem;">
+                <a href="#">
+                <img class="card-img-top" src="/static/imagem/saude.png" alt="graduacao">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-center">Saúde</h5>
+                </div>
+            </a>
+            </div>
+            <div class="card bg-secondary mb-3" style="max-width: 10rem;">
+                <a href="#">
+                <img class="card-img-top" src="/static/imagem/engenharia.png" alt="especialização">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-center">Engenharia e Tecnologia</h5>
+                </div>
+            </a>
+            </div>
+            <div class="card bg-secondary mb-3" style="max-width: 10rem;">
+                <a href="#">
+                <img class="card-img-top" src="/static/imagem/humanas.png" alt="mestrado e doutorado">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-center">Humanidades</h5>
+                </div>
+            </a>
+            </div>
+            <div class="card bg-secondary mb-3" style="max-width: 10rem;">
+                <a href="#">
+                <img class="card-img-top" src="/static/imagem/educacao.png" alt="mestrado e doutorado">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-center">Educação e Artes</h5>
+                </div>
+            </a>
+            </div>
+            <div class="card bg-secondary mb-3" style="max-width: 10rem;">
+                <a href="#">
+                <img class="card-img-top" src="/static/imagem/ead.png" alt="mestrado e doutorado">
+                <div class="card-img-overlay">
+                    <h5 class="card-title text-center align-bottom">EAD</h5>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-5">
+        <h3>Pós Graduação</h3>
+        <p></p>
+        <div class="card-deck">
+            <div class="card">
+                <a href="#">
+                <img class="card-img-top rounded-bottom shadow bg-white rounded" src="/static/imagem/graduacao.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Especialização e Aperfeiçoamento</h5>
+                </div>
+            </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                <img class="card-img-top rounded-bottom shadow bg-white rounded" src="/static/imagem/especialização.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">MBA</h5>
+                </div>
+            </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                <img class="card-img-top rounded-bottom shadow bg-white rounded" src="/static/imagem/doutorado.jpg"
+                    alt="Imagem de capa do card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Mestrado e Doutorado</h5>
+                </div>
+            </a>
+            </div>
+        </div>
+    </section>
+    <section class="m-5">
+        <p>
+        <h2 class="text-center">Por que estudar na Unes?</h3>
+            </p>
+            <div class="card-deck p-2">
+                <div class="card border-0">
+                    <img class="card-img-top rounded-circle" src="/static/imagem/universidade.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mais de 50 anos de história</h5>
+                        <p class="card-text">A Unes foi fundada em 1971 e está preparada para enfrentar os desafios
+                            atuais e futuros do ensino superior brasileiro.</p>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <img class="card-img-top rounded-circle" src="/static/imagem/ranking.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">TOP NO RANKING OFICIAL MEC</h5>
+                        <p class="card-text">São 5 anos consecutivos entre as 10 melhores univerdidades do Estado de São
+                            Paulo.</p>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <img class="img-pos card-img-top rounded-circle" src="/static/imagem/cursos.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">MAIS DE 100 CURSOS</h5>
+                        <p class="card-text">Cursos de Graduação, Mestrado, Doutorado, Pós-Doutorado, Especialização,
+                            MBA, Aperfeiçoamento, Aprimoramento e Extensão. Escolha seu curso.</p>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <img class="img-pos card-img-top rounded-circle" src="/static/imagem/pesquisa.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">PESQUISA E EXTENSÃO</h5>
+                        <p class="card-text">Aqui nós incentivamos a pesquisa!</p>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <img class="img-pos card-img-top rounded-circle" src="/static/imagem/tecnologia.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title">TECNOLOGIA SEMPRE A FRENTE</h5>
+                        <p class="card-text">Equipados sempre com os melhores equipamentos e docente atualizados a novas
+                            tecnologias.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+</header>
+
+{% endblock %}

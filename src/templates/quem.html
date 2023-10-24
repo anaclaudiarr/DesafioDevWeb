@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<header class="m-5">
+    <section>
+        <p>
+        <h2 class="p-3 mb-2 bg-secondary text-white">Quem somos</h2>
+        </p>
+        <p  class="m-5">É uma instituição de ensino superior, de pesquisa e de extensão, constituída por um conjunto de unidades
+            (escolas, institutos, etc.), que promove a formação profissional e científica de pessoal de nível superior,
+            a realização de pesquisa teórica e prática nas principais áreas do saber, o armazenamento e a divulgação de
+            seus resultados e a promoção de atividades de extensão</p>
+    </section>
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="/static/imagem/atendimento.png" alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/static/imagem/massa.png" alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/static/imagem/esporte.png" alt="Terceiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/static/imagem/restaurante.png" alt="Quarto Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/static/imagem/laboratorio.png" alt="Quinto Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="/static/imagem/intercambio.png" alt="Sexto Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+    <hr>
+    <section class="m-5">
+        <p>
+        <h2>Objetivo</h2>
+        </p>
+        <p>A Unes tem como principal objetivo preparar o aluno para inseção no mercado de trabalho. Possui os mais
+            completos, sofisticados e atualizados laboratórios do Brasil. Além de docentes especializados e com
+            experiência no mercado de trabalho e parcerias com grandes empresas.</p>
+        <p>O difícil papel de uma grande universidade em inserir seus formandos no mercado representa constante e
+            crescente desafio. A competitividade e as inúmeras exigências do mundo profissional requerem muito empenho em laboratórios, nos
+            quais, o aperfeiçoamento teórico, por meio de experiências, observações e atividades práticas, sob a
+            orientação dos professores, representa um modelo realístico do campo das profissões.</p>
+        <p>Os laboratórios da Unes, para atender todas as áreas do conhecimento e os respectivos cursos de graduação e
+            pós-graduação, estão presentes nos diferentes campi</p>
+    </section>
+</header>
+
+{% endblock %}
