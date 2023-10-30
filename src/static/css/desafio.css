@@ -4,119 +4,343 @@
     padding: 0;
 }
 
-#mainSlider .carousel-inner{
-    height: 85vh; /*altura do slide para caber dentro da tela inicial*/
+#Slider .carousel-inner {
+    height: 90vh;
+    /*altura do slide para caber dentro da tela inicial*/
 }
 
-#mainSlider .carousel-caption{
-    top: 15%;
-    width: 25%;
+#Slider .carousel-caption {
+    top: 10%;
+    width: 75%;
+    text-align: end;
+    padding: 3%;
 }
 
-#mainSlider .carousel-caption h4{
+#Slider .carousel-caption h2{
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 70px;
+    background-color: rgb(24, 17, 119);
+    border-radius: 8px;
+}
+
+#Slider .carousel-caption h3{
+    color: rgb(24, 17, 119);
+    font-size: 60px;
+}
+
+#Slider .carousel-caption h4{
+    color: rgb(132, 132, 214);
     font-size: 50px;
-    margin-bottom: 30px;    
-    color: rgb(23, 23, 93);
-}
+    background-color: rgb(9, 9, 88);
+    border-radius: 2px;
 
-#mainSlider .carousel-caption h2{
-    font-size: 50px;
-    margin-bottom: 30px;
-    background-color: rgb(46, 91, 174);
-    color: white;
-}
-
-#mainSlider .carousel-caption h3{
-    font-size: 30px;
-    font-weight: 10%;
-    margin-bottom: 10px;
-    color: rgb(217, 223, 236);
 }
 
 .main-btn{
-    background-color: #e5a826;
-    font-size: large;
-    color: white;
+    background-color: #ffd208;
+    color: rgb(60, 22, 231);
     text-transform: uppercase;
-    width: 220px;
-    height: 50px;
+    width: 200px;
+    height: 60px;
+    margin:auto;
     padding: 10px 20px;
-    transition: .55s;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 25px;
+    border-radius: 30px;
+    transition: .5s;
 }
 
 .main-btn:hover{
     text-decoration: none;
-    color: white;
-    border-color:coral;
-    width: 222px;
-    height: 52px;
+    color: #ffd208;
+    background-color: transparent;
+    border-color: #ffd208;
+    border: 3px solid;
 }
 
-.carousel-indicators .active{
-    background-color: #e5a826;
+
+/*Graduação*/
+.card-deck{
+    justify-content: space-around;
 }
 
-/* card graduação*/
+/*pós graduação*/
 
 
-
-/*breakpoints*/
-.card-title{
-    color: black;
-    font-size: 14px;
+/*Porque?*/
+.porque-card .card-img-top{
+    width: 150px;
+    height: 150px;   
 }
 
-.img-pos{
-    width:50px;
-    height: 50px;
-    display: flex;
-    flex-direction: row;
-
+.porque-card h2{
+    margin-bottom: 50px;
 }
 
-/* 480px - 768px = tablet */
-@media (min-width:480px) {
-    .card-title{
-        color: violet;
-        font-size: 14px;
-        
+/*laptop*/
+@media screen and (max-width: 1024px) {
+    /*Slide*/
+
+    .container-fluid {
+        padding: 0;
     }
 
-    .img-pos{
-        width: 50px;
-        height: 50px;
+    #Slider .carousel-inner {
+        height: 90vh;
+    }
 
+    #Slider .carousel-caption {
+        width: 75%;
+        height: auto;
+    }
+
+    #Slider .carousel-caption h2 {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+    
+    #Slider .carousel-caption h3{
+        font-size: 32px;
+    }
+
+    #Slider .carousel-caption h4{
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .main-btn {
+        font-size: 15px;
+        width: 150px;
+        height: 50px;
+        margin-left: 25px;
+        text-align: center;
+    }
+
+     /* Card Graduação*/
+
+     .card-img-overlay{
+        padding-top: 7%;
+    }
+
+    .graduacao-card .card-title{
+        font-size: 14px;
+    }
+
+    /*Por que estudar na unes*/
+
+    .porque-card .card-img-top{
+        width: 100px;
+        height: 100px;   
+    }
+
+    .porque-card .card-title{
+        font-size: 14px;
+        align-self: center;
+    }
+
+    .porque-card .card-text{
+        font-size: 12px;
+    }
+    
+    .porque-card h2{
+        margin-bottom: 50px;
+    }
+
+    .porque-card .card{
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
     }
     
 }
 
-/* 768px - 1024px = telas menores, laptop */
-@media (min-width:768px) {
-    .card-title{
-        color: gray;
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    /*Slide*/
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    #Slider .carousel-inner {
+        height: 90vh;
+    }
+
+    #Slider .carousel-caption {
+        width: 75%;
+        height: auto;
+    }
+
+    #Slider .carousel-caption h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    
+    #Slider .carousel-caption h3{
+        font-size: 28px;
+    }
+
+    #Slider .carousel-caption h4{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .main-btn {
+        font-size: 15px;
+        width: 150px;
+        height: 50px;
+        margin-left: 25px;
+        text-align: center;
+    }
+
+    /* Card Graduação*/
+
+    .card-img-overlay{
+        padding-top: 5%;
+    }
+
+    .graduacao-card .card-title{
         font-size: 12px;
     }
 
-    .img-pos{
+    /*Por que estudar na unes*/
 
+    .porque-card .card-img-top{
+        width: 100px;
+        height: 100px;   
     }
+
+    .porque-card .card-title{
+        font-size: 14px;
+        align-self: center;
+    }
+
+    .porque-card .card-text{
+        font-size: 12px;
+    }
+    
+    .porque-card h2{
+        margin-bottom: 50px;
+    }
+
+    .porque-card .card{
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+   
+}
+
+/*Celular*/
+@media screen and (max-width: 480px) {
+/*Slide*/
+
+.container-fluid {
+    padding: 0;
+}
+
+#Slider .carousel-inner {
+    height: 60vh;
+}
+
+#Slider .carousel-caption {
+    top: 5%;
+}
+
+#Slider .carousel-caption h4{
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#Slider .carousel-caption h3{
+    font-size: 22px;
+}
+
+#Slider .carousel-caption h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#Slider .carousel-caption h5{
+    font-size: 12px;
+}
+
+.main-btn {
+    font-size: 10px;
+    width: 40px;
+    height: 20px;
+    margin-left: 15px;
+}
+ /* Card Graduação*/
+
+ .card-img-overlay{
+    padding-top: 8%;
+
+}
+
+.graduacao-card .card-title{
+    font-size: 14px;
+}
+
+.graduacao-card .card-deck{
     
 }
 
-/* 1200px + px = Tvs */
-@media (min-width:1200px) {
-    .card-title{
-        color: green;
-    }
-
-    .img-pos{
-        
-
-    }
-    
+.graduacao-card .card{
+    align-self: center;
+    width: 120px;
+    height: 120px;
 }
 
+/*Por que*/
+
+.porque-card .card{
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*que somos*/
+
+}
+
+/*celular tela menor*/
+@media  screen and (max-width: 420px) {
+    /*Slide*/
+
+.container-fluid {
+    padding: 0;
+}
+
+#Slider .carousel-inner {
+    height: 60vh;
+}
+
+#Slider .carousel-caption {
+    top: 5%;
+}
+
+#Slider .carousel-caption h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#Slider .carousel-caption h3{
+    font-size: 18px;
+}
+
+#Slider .carousel-caption h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#Slider .carousel-caption h5{
+    font-size: 12px;
+}
+
+.main-btn {
+    font-size: 10px;
+    width: 40px;
+    height: 20px;
+    margin-left: 15px;
+}
+}
